@@ -12,3 +12,19 @@ new Vue({
   store,
   render: h => h(App)
 }).$mount('#app')
+
+
+
+/* TODO LIST
+
+1. Layouts
+      MainLayout
+          Header
+              • create dropdown
+      AuthLayout
+          • create right panel + footer        
+
+              
+              
+              
+*/

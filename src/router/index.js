@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
 
 Vue.use(VueRouter)
 
@@ -8,7 +7,21 @@ const routes = [
   {
     path: '/',
     name: 'Auth',
+    meta: {layout: 'auth'},
     component: () => import(/* webpackChunkName: "about" */ '../views/Auth.vue')
+  },
+  {
+    path: '/profile',
+    name: 'Profile',
+    meta: {layout: 'main'},
+    component: () => import(/* webpackChunkName: "about" */ '../views/Profile.vue')
+  },
+  
+  {
+    path: '/im',
+    name: 'Messages',
+    meta: {layout: 'main'},
+    component: () => import(/* webpackChunkName: "about" */ '../views/Messages.vue')
   },
 ]
 
